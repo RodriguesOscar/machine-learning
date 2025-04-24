@@ -34,7 +34,7 @@ print(
     significance_probability_p_value,
 )
 
-# Interpret the result
+# Possible interpretation of the result
 if significance_probability_p_value < 0.05:
     print(
         "Conclusion: Yes, the average temperatures in July and May differ significantly."
