@@ -1,8 +1,12 @@
 import pandas as pd
 from scipy.stats import ttest_ind
 
-# Load dataset
-df = pd.read_csv("wetter-data/wetter.csv")
+# Load dataset offline
+# df = pd.read_csv("wetter-data/wetter.csv")
+
+### Load dataset online, so you can run the code without downloading the file and fetch realtime data from github
+url = "https://raw.githubusercontent.com/opencampus-sh/einfuehrung-in-data-science-und-ml/main/wetter.csv"
+df = pd.read_csv(url)
 
 # Convert date column to datetime
 df["Datum"] = pd.to_datetime(df["Datum"])
