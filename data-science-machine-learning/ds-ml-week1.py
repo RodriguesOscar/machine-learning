@@ -2,7 +2,7 @@ import pandas as pd
 from scipy.stats import ttest_ind
 
 # Load dataset
-df = pd.read_csv("data/wetter.csv")
+df = pd.read_csv("wetter-data/wetter.csv")
 
 # Convert date column to datetime
 df["Datum"] = pd.to_datetime(df["Datum"])
